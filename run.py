@@ -1,5 +1,6 @@
 import sys, time
 from opening import opening_image
+import capitalcities
 
 def typewriter(textentered):
     """
@@ -14,6 +15,6 @@ def typewriter(textentered):
         time.sleep(0.04)
     print()
 
-typewriter("testtypewriter")
 
-opening_image()
+print(capitalcities.capital_cities)
+
