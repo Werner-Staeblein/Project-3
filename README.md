@@ -1,32 +1,77 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Capital City - CodeInstitute Python Essentials Project
 
-Welcome,
+Capital City is a hangman game to guess the capital cities of different countries.
+The user enters one character at a time to guess a randomly picked capital city. 
+The website is built with Python.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+**<font color="red">Placeholder View the live site [LiveSite](URL)</font>**
 
-## Reminders
+**<font color="red">Placeholder Link to repository on GH [Link to Repository](URL)</font>**
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+**<font color="red">Placeholder for screenshot of final on different devices</font>**
 
-## Creating the Heroku app
+# Table of contents
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+- [Intro](#intro)
+- [Headings](#headings)
+- [Technologies](#technologies)
+- [Deployment](#deployment)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+# Intro
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+# Headings
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
----
+# Technologies
 
-Happy coding!
+**[Visual Studio Code](https://code.visualstudio.com/)** Visual Studio Code (VS-Code)was used as integrated development environment for the entire project. The GitHub repository was cloned to VS-Code for this purpose
+
+**[GitHub](https://github.com/)** The code files, README files and assets are stored on GitHub. The code on GitHub was pushed from Git
+
+**[Git](https://git-scm.com/)** The version control system Git was used to document development of the website and to push code to the GitHub repository. The specific reasons for the commit are reflected in the respective commit message
+            
+**[Heroku](https://www.heroku.com/)** Heroku is a platform as a service (PaaS) to build, run, and operate applications cloud-based. It was used to deploy the website    
+
+**[Lucid Chart](https://www.lucidchart.com/pages/)** Lucid Chart is a web-based diagramming tool to create flowcharts, wireframes, and visualisations of concepts    
+
+### Libraries and python built-in modules used
+
+**[sys](https://docs.python.org/3/library/sys.html)** sys was used for system-specific functions such as exit()
+
+**[Random Module](https://docs.python.org/3/library/random.html)** The random module was used to pick a random capital city from a list of cities
+
+**[Colorama](https://pypi.org/project/colorama/)** Installed with pip install colorama. Used to change colors of UI
+
+**[Time](https://docs.python.org/3/library/time.html)** time was used to create typewriter effects
+
+
+
+
+
+# Deployment
+
+
+- **Clone the repository**
+
+1. Log in (or sign up) to GitHub.
+2. Navigate to the GitHub Repository for this project, wernerstaeblein/.
+
+
+# Credits
+
+## Code
+
+- Tutorials from Code Institute's resources on python essentials.
+
+## Content
+- 
+
+## Media
+
+-  
+  
+
+
