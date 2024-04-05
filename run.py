@@ -1,5 +1,5 @@
 import sys, time
-
+from opening import opening_image
 
 def typewriter(textentered):
     """
@@ -15,3 +15,5 @@ def typewriter(textentered):
     print()
 
 typewriter("testtypewriter")
+
+opening_image()
