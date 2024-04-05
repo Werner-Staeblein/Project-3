@@ -1,4 +1,17 @@
-# Your code goes here.
+import sys, time
 
-# the extra line was added with \n
 
+def typewriter(textentered):
+    """
+    Creates typewriter effect for text displayed.
+    """
+    for letter in textentered:
+        if letter == '\n':
+            print("\n")
+        else:
+            sys.stdout.write(letter)
+            sys.stdout.flush()
+        time.sleep(0.04)
+    print()
+
+typewriter("testtypewriter")
