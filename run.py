@@ -1,7 +1,10 @@
 import sys, time, random
+import hangman_stages
 from opening import opening_image, instructions
 from colorama import Fore
 import capitalcities
+from hangman_stages import get_hangman_stage
+
 
 def typewriter(textentered):
     """
@@ -23,5 +26,10 @@ def select_word():
     """
     return random.choice(capitalcities.capital_cities)
 
-testcity = select_word()
-print(testcity)
+
+def testimpporthangman():
+    remaining_attempts = 0
+    stage = hangman_stages.get_hangman_stage(remaining_attempts)
+    print(stage)
+
+testimpporthangman()
