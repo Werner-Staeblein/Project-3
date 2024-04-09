@@ -1,5 +1,6 @@
 import sys, time
-from opening import opening_image
+from opening import opening_image, instructions
+from colorama import Fore
 import capitalcities
 
 def typewriter(textentered):
@@ -16,5 +17,5 @@ def typewriter(textentered):
     print()
 
 
-print(capitalcities.capital_cities)
-
+opening_image()
+instructions()

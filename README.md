@@ -66,6 +66,9 @@ The website is built with Python.
 
 - Tutorials from Code Institute's resources on python essentials.
 
+**[Typewriter effect code](https://stackoverflow.com/questions/20302331/typing-effect-in-python)** used for the typewriter effect code
+
+
 ## Content
 - 
 
