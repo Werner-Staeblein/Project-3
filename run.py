@@ -1,4 +1,4 @@
-import sys, time
+import sys, time, random
 from opening import opening_image, instructions
 from colorama import Fore
 import capitalcities
@@ -17,5 +17,11 @@ def typewriter(textentered):
     print()
 
 
-opening_image()
-instructions()
+def select_word():
+    """"
+    Step 1: selects a random city from the list in capitalcities
+    """
+    return random.choice(capitalcities.capital_cities)
+
+testcity = select_word()
+print(testcity)
