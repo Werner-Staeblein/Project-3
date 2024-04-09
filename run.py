@@ -43,8 +43,9 @@ def start_game(secret_city, username):
         guessed_letters = ""
         unique_secret_letters = get_unique_letters(secret_city)
 
-        print(unique_secret_letters)
-
+        while remaining_attempts > 0 and len(guessed_letters) < len(unique_secret_letters):
+            guess = input("Guess a letter of the secret city: ").upper()
+            
 
 
 def main():
