@@ -22,8 +22,8 @@ def opening_image():
 
 
 def instructions():
-    print("="*102)
-    print("*" * 40 + " HOW TO PLAY THE GAME " + "*" * 40)
+    print("="*70)
+    print("*" * 30 + " HOW TO PLAY THE GAME " + "*" * 30)
     print()
     print("""
     1. This is a traditional hangman game
@@ -31,6 +31,6 @@ def instructions():
     3. Guess the right capital city to escape the situation
     """)
     print()
-    print("*" * 102)
-    print("="*102)
+    print("*" * 70)
+    print("="*70)
     print("\n")
