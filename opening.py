@@ -22,8 +22,8 @@ def opening_image():
 
 
 def instructions():
-    print("="*70)
-    print("*" * 30 + " HOW TO PLAY THE GAME " + "*" * 30)
+    print("="*78)
+    print("*" * 29 + " HOW TO PLAY THE GAME " + "*" * 29)
     print()
     print("""
     1. This is a traditional hangman game
