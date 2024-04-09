@@ -84,6 +84,10 @@ User eiter enters player name or not. Input is validated. No user input results 
 
 **[CI Python Linter](https://pep8ci.herokuapp.com/)** The Code Institute Python Linter was used to validate python code
 
+**[Python](https://www.python.org/)** Python is an interpreted, high-level and general purpose programming language
+
+**[ASCII Art Generator](https://emojicombos.com/eiffel-tower-ascii-art)** ASCII art generator for image of Eiffel tower
+       
 
 
 
@@ -99,6 +103,34 @@ User eiter enters player name or not. Input is validated. No user input results 
 **[Time](https://docs.python.org/3/library/time.html)** time was used to create typewriter effects
 
 
+# Testing
+
+1. Validator Testing	
+    
+    **[CI Python Linter](https://pep8ci.herokuapp.com/)** The Code Institute Python Linter was used to validate python code and conformity to PEP8 style guide
+    
+    Some warnings on code lines slightly too long resulting from use of variable names that might be slightly too long but more explanatory in nature (conflict of variable name being self explanatory versus maximum line length)
+
+
+**<font color="red">Placeholder final python linter</font>**
+    
+    
+2. Validator Testing	
+    
+    **[Lighthouse](https://developer.chrome.com/docs/devtools/overview?hl=de)** 
+    
+    Lighthouse was used to check the website performance, accessibility, best practices, and SEO
+    
+**<font color="red">Placeholder final ligthouse testing</font>**
+    
+    
+3. Manual Testing	
+    
+| Test            | Test Description | Expected Outcome | Result |					
+|-----------------|------------------|------------------|--------|					
+|                 |                  |                  |        |					
+|                 |                  |                  |        |					
+|                 |                  |                  |        |					
 
 
 
@@ -112,6 +144,18 @@ User eiter enters player name or not. Input is validated. No user input results 
 
 
 # Credits
+
+The Eiffel tower ASCII image was taken from **[Emojicombos](https://emojicombos.com/eiffel-tower-ascii-art)**. No creator mentioned on the page.
+                                        
+I used these websites to gather information for the code: 										
+                                                            
+- **[Google](https://www.google.com/)** 										
+- **[mdn](https://developer.mozilla.org/en-US/)** 										
+- **[W3C](https://www.w3.org/)** 										
+- **[W3schools](https://www.w3schools.com/)**										
+- **[Stack Overflow](https://stackoverflow.com/)**										
+- Code Institute Slack Community										
+
 
 ## Code
 
