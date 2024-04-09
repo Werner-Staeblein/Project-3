@@ -70,7 +70,7 @@ def start_game(secret_city, username):
                     guessed_letters += guess
             else:
                 print("No! The letter {} is not part of the secret city".format(guess))
-                remaining_attempts -= 1
+                remaining_attempts -= 1 
            
 
 def main():

@@ -12,10 +12,10 @@ The website is built with Python.
 
 # Table of contents
 
-- [Intro](#intro)
-- [Headings](#headings)
-- [Technologies](#technologies)
-- [Deployment](#deployment)
+- **[Intro](#intro)**
+- **[Headings](#headings)**
+- **[Technologies](#technologies)**
+- **[Deployment](#deployment)**"
 
 # Intro
 
