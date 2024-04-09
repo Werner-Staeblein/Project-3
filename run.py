@@ -32,12 +32,28 @@ def get_unique_letters(word):
     """
     return "".join(set(word))
 
+def is_guess_in_secret_word(guess, secret_city):
+    """
+    step 3: Check if the guessed letter is in the secret city.
+    """
+    guess = guess.upper()
+    secret_city = secret_city.upper()
+    
+    if len(guess) != 1 or not guess.isalpha():
+        print("Only single letters are allowed")
+        return False
+    elif guess.upper() in secret_city:
+        return True
+    else:
+        return False
+
 
 def start_game(secret_city, username): 
     """
     Start the hangman game.
     """
     guessed_correctly = False    
+   
     while True:
         remaining_attempts = 6
         guessed_letters = ""
@@ -45,7 +61,9 @@ def start_game(secret_city, username):
 
         while remaining_attempts > 0 and len(guessed_letters) < len(unique_secret_letters):
             guess = input("Guess a letter of the secret city: ").upper()
-            
+            guess_in_secret_word = is_guess_in_secret_word(guess, secret_city)
+            print(guess_in_secret_word)
+           
 
 
 def main():
