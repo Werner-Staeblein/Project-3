@@ -50,8 +50,9 @@ def start_game(secret_city, username):
 
 def main():
     opening_image()
-    print(Fore.RESET)
-
+    
+    print()
+    print()
     typewriter("Welcome to capital cities guessing")
     typewriter("We will put your geography knowledge to the test")
     time.sleep(1)
