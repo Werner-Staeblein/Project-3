@@ -1,4 +1,6 @@
-import sys, time, random
+import sys
+import time
+import random
 import hangman_stages
 from opening import opening_image, instructions
 from colorama import Fore
@@ -26,6 +28,7 @@ def select_word():
     """
     return random.choice(capitalcities.capital_cities)
 
+
 def get_unique_letters(word):
     """
     Step 2: Convert the secret word into a set to remove duplicates.
@@ -38,7 +41,7 @@ def is_guess_in_secret_word(guess, secret_city):
     """
     guess = guess.upper()
     secret_city = secret_city.upper()
-    
+
     if len(guess) != 1 or not guess.isalpha():
         print("Only single letters are allowed")
         return False
@@ -47,12 +50,12 @@ def is_guess_in_secret_word(guess, secret_city):
     else:
         return False
 
-def start_game(secret_city, username): 
+def start_game(secret_city, username):
     """
     Start the hangman game.
     """
-    guessed_correctly = False    
-   
+    guessed_correctly = False
+
     while True:
         remaining_attempts = 6
         guessed_letters = ""
@@ -61,7 +64,7 @@ def start_game(secret_city, username):
         while remaining_attempts > 0 and len(guessed_letters) < len(unique_secret_letters):
             guess = input("Guess a letter of the secret city: ").upper()
             guess_in_secret_word = is_guess_in_secret_word(guess, secret_city)
-            
+
             if guess_in_secret_word:
                 if guess in guessed_letters:
                     print("You have already guessed the letter {}".format(guess))
@@ -70,12 +73,12 @@ def start_game(secret_city, username):
                     guessed_letters += guess
             else:
                 print("No! The letter {} is not part of the secret city".format(guess))
-                remaining_attempts -= 1 
-           
+                remaining_attempts -= 1
 
 def main():
+
     opening_image()
-    
+
     print()
     print()
     typewriter("Welcome to capital cities guessing")
@@ -105,6 +108,5 @@ def main():
     while True:
         secret_city = select_word()
         start_game(secret_city, username)
-
 
 main()

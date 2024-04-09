@@ -15,7 +15,7 @@ The website is built with Python.
 - **[Intro](#intro)**
 - **[Headings](#headings)**
 - **[Technologies](#technologies)**
-- **[Deployment](#deployment)**"
+- **[Deployment](#deployment)**
 
 # Intro
 
@@ -56,9 +56,17 @@ A flowchart was prepared in the planning phase and developed alongside the codin
 
 </details>										
                                             
+# Features
 
+Feature 1: Welcome message | Logo
+The logo for the application was created with an ASCII Art Generator
 
+**<font color="red">Placeholder for logo screenshot</font>**
 
+Feature 2: Ask for playername
+User eiter enters player name or not. Input is validated. No user input results in default name assigned to user.
+
+**<font color="red">Placeholder for user name feature</font>**
 
 
 
@@ -70,9 +78,15 @@ A flowchart was prepared in the planning phase and developed alongside the codin
 
 **[Git](https://git-scm.com/)** The version control system Git was used to document the development of the application and to push code to the GitHub repository. The specific reasons for the commit are reflected in the respective commit message
             
-**[Heroku](https://www.heroku.com/)** Heroku is a platform as a service (PaaS) to build, run, and operate applications cloud-based. It was used to deploy the website    
+**[Heroku](https://www.heroku.com/)** Heroku is a platform as a service (PaaS) to build, run, and operate applications cloud-based. It was used to deploy the website
 
-**[Lucid Chart](https://www.lucidchart.com/pages/)** Lucid Chart is a web-based diagramming tool to create flowcharts, wireframes, and visualisations of concepts    
+**[Lucid Chart](https://www.lucidchart.com/pages/)** Lucid Chart is a web-based diagramming tool to create flowcharts, wireframes, and visualisations of concepts
+
+**[CI Python Linter](https://pep8ci.herokuapp.com/)** The Code Institute Python Linter was used to validate python code
+
+
+
+
 
 ### Libraries and python built-in modules used
 
