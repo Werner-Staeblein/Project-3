@@ -47,7 +47,6 @@ def is_guess_in_secret_word(guess, secret_city):
     else:
         return False
 
-
 def start_game(secret_city, username): 
     """
     Start the hangman game.
@@ -62,9 +61,17 @@ def start_game(secret_city, username):
         while remaining_attempts > 0 and len(guessed_letters) < len(unique_secret_letters):
             guess = input("Guess a letter of the secret city: ").upper()
             guess_in_secret_word = is_guess_in_secret_word(guess, secret_city)
-            print(guess_in_secret_word)
+            
+            if guess_in_secret_word:
+                if guess in guessed_letters:
+                    print("You have already guessed the letter {}".format(guess))
+                else:
+                    print("Yes! The letter {} is part of the secret city".format(guess))
+                    guessed_letters += guess
+            else:
+                print("No! The letter {} is not part of the secret city".format(guess))
+                remaining_attempts -= 1
            
-
 
 def main():
     opening_image()

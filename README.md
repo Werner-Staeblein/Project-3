@@ -19,8 +19,45 @@ The website is built with Python.
 
 # Intro
 
+## User Stories
 
-# Headings
+Capital City is for users who want to test their knowledge about the capital cities of various countries worldwide.
+
+A user of the application wants to
+
+- easily start and view the instructions for the game
+- understand easily the purpose of the application
+- have clear instructions what to do and how to use the application
+- have instructions and guidance while playing the game
+- be presented different questions (a different capital city guess) when playing the game
+- wants to play the game again once a guessing round is completed
+
+**<font color="red">Placeholder for site administrator experience</font>**
+
+- requirement to validate user input
+
+
+# Design & Flow of logic
+                                            
+The design of the game is limited. The user interface is text-based based on the command-line application developed with Python. Since the game is terminal-based, no images such as .jpg or other image formats can be used.
+
+The logo of Capital City, represented by the Eiffel Tower, is displayed using ASCII
+art. The stages of the game are displayed with multiline strings.
+
+## Flowchart                                       
+    								        
+A flowchart was prepared in the planning phase and developed alongside the coding of the command-line application. The flowchart was created with **[Lucidchart](https://www.lucidchart.com/pages/)**
+
+<details>
+<summary> Click here for the flowchart </summary>
+<br>									
+
+![Flowchart](documentation/readme/initial_flow_chart.png)
+
+</details>										
+                                            
+
+
 
 
 
@@ -31,7 +68,7 @@ The website is built with Python.
 
 **[GitHub](https://github.com/)** The code files, README files and assets are stored on GitHub. The code on GitHub was pushed from Git
 
-**[Git](https://git-scm.com/)** The version control system Git was used to document development of the website and to push code to the GitHub repository. The specific reasons for the commit are reflected in the respective commit message
+**[Git](https://git-scm.com/)** The version control system Git was used to document the development of the application and to push code to the GitHub repository. The specific reasons for the commit are reflected in the respective commit message
             
 **[Heroku](https://www.heroku.com/)** Heroku is a platform as a service (PaaS) to build, run, and operate applications cloud-based. It was used to deploy the website    
 
@@ -66,7 +103,7 @@ The website is built with Python.
 
 - Tutorials from Code Institute's resources on python essentials.
 
-**[Typewriter effect code](https://stackoverflow.com/questions/20302331/typing-effect-in-python)** used for the typewriter effect code
+- **[Typewriter effect code](https://stackoverflow.com/questions/20302331/typing-effect-in-python)** used for the typewriter effect code
 
 
 ## Content
