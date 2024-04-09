@@ -27,6 +27,20 @@ def select_word():
     return random.choice(capitalcities.capital_cities)
 
 
+def start_game(secret_city, username): 
+    """
+    Start the hangman game.
+    """
+    guessed_correctly = False    
+    while True:
+        remaining_attempts = 6
+        guessed_letters = ""
+        unique_secret_letters = secret_city
+        print(secret_city)
+
+
+
+
 def main():
     opening_image()
     print(Fore.RESET)
@@ -54,5 +68,10 @@ def main():
             instructions()
             time.sleep(0.5)
             break
+
+    while True:
+        secret_city = select_word()
+        start_game(secret_city, username)
+
 
 main()
