@@ -27,9 +27,32 @@ def select_word():
     return random.choice(capitalcities.capital_cities)
 
 
-def testimpporthangman():
-    remaining_attempts = 0
-    stage = hangman_stages.get_hangman_stage(remaining_attempts)
-    print(stage)
+def main():
+    opening_image()
+    print(Fore.RESET)
 
-testimpporthangman()
+    typewriter("Welcome to capital cities guessing")
+    typewriter("We will put your geography knowledge to the test")
+    time.sleep(1)
+
+    while True:
+        print(Fore.GREEN)
+        username = input("Please provide your name \n")
+
+        if username == "":
+            typewriter("Looks like you want to play anonymously")
+            typewriter("Ok, we will call you Geo, the champ of capital cities knowledge, aka G3C")
+            username = "G3C"
+            break
+        elif not username.isalpha():
+            print(Fore.RED)
+            typewriter("Please enter a name using only alphabetic characters.")
+        else:
+            print(Fore.GREEN)
+            typewriter(f"Let's get started {username.upper().strip()}")
+            time.sleep(0.5)
+            instructions()
+            time.sleep(0.5)
+            break
+
+main()
