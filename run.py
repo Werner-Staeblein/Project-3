@@ -26,6 +26,12 @@ def select_word():
     """
     return random.choice(capitalcities.capital_cities)
 
+def get_unique_letters(word):
+    """
+    Step 2: Convert the secret word into a set to remove duplicates.
+    """
+    return "".join(set(word))
+
 
 def start_game(secret_city, username): 
     """
@@ -35,9 +41,9 @@ def start_game(secret_city, username):
     while True:
         remaining_attempts = 6
         guessed_letters = ""
-        unique_secret_letters = secret_city
-        print(secret_city)
+        unique_secret_letters = get_unique_letters(secret_city)
 
+        print(unique_secret_letters)
 
 
 
