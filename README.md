@@ -134,8 +134,46 @@ User eiter enters player name or not. Input is validated. No user input results 
 
 
 
+
+
 # Deployment
 
+- **Deployment on Heroku**
+
+The website is deployed with Heroku. Heroku is a cloud platform as a service (PaaS) that allows to deply applications in the cloud. 																				
+                                                                                
+To deploy the website from the GitHub repository to Heroku, several steps need to be taken as follows:																				
+                                                                                
+1. Using the command pip freeze > requirements.txt, a list of requirements in the requirements.txt is created.The command pip freeze generates a list of installed Python packages including their versions and the redirection operator ensures that the output of the command will be placed into the requirements.txt file.
+
+**Special attention**: the pip freeze command used in VS Code may create a list of dependencies that are not needed for deployment. Rather, VS Code is adding TOO MANY dependencies that may make deployment impossible on Heroku. The key dependency for this project is colorama. Ensure that only this dependency is shown in the requirements.txt file once pip freeze > requirements.txt was completed in either VS Code or GitPod
+                                                                                
+2. Log in to **[Heroku](https://www.heroku.com/)**    											
+                                                                                
+3. Inside Heroku, the button "New" is clicked. Subsequently, select "Create new app"
+                                                                                
+4. Assign a unique name to the new app created. For the region choose Europe
+                                                                                
+5. Click the "Create app" button
+                                                                                
+6. In the Settingstab, select the section Config Vars. The config vars store the so-called environment variables
+                                                                                
+7. In the Settingstab, select the section Config Vars. The config vars store the so-called environment variables. Click the button ""Reveal Config Vars".							
+                                                                                
+8. For deployment of this project on Heroku using the CI template, one environment variable is needed. First the key named PORT and the value of 8000. Once key:value are entered, click the button add to add the environment variable. For this project no sensitive data such as usernames, email addresses and passwords are needed. To keep any such data secret, this data could likewise be stored in Config Vars so that this data is not disclosed in any files stored on GitHub
+                                                                                
+9. Still within the Settings tab, the button "Add buildpack" must be clicked. As the first of two buildpacks to be added, Python is added as. Once Python is entered, click "Save".
+As a second step, Node.js has to be added as second and final buildpack. Python must be the first buildpack and Node.js the second. The two buildpacks must be in this order.
+                                                                                
+10.  Scroll back to the top of the page. At the same level as the settings tab, click the "Deploy" tab. Inside the deploy tab, GitHub can be selected as deployment method.	Once GitHub is confirmed and clicked as deployment method, the repository name can be searched on GitHub with the "Search" button. Once the correct repository inside GitHub is displayed, click the button "connect"
+                                                                                
+11.  Interim step: Now that repository to be deployed was selected, two options for deployment exist as laid out in the next step																	
+                                                                                
+12.  Either (i) automatic deployment by clicking "Enable Automatic Deploys". In this case, the deployment is updated when changes are pushed to GitHub for the underlying code. This is convenient for development purposes as all changes in the underlying code can be tested immediately in the deployed version. Manual testing in the development phase is facilitated.			
+                                                                                
+13.  or (ii) manual deployment by clicking the "Deploy Branch" button. In this case, a manual deploy would need to be done each and every time a code change is pushed to the GitHub repository. There is no automatic deploy of underlying code changes in GitHub
+                                                                                
+14.  Once the proces of either step 11 or 12 is completed, the button "View" at the bottom of the page is clicked to open the deployed version of the application
 
 - **Clone the repository**
 
@@ -165,11 +203,21 @@ I used these websites to gather information for the code:
 
 
 ## Content
-- 
+
+Text content for this website was written by the owner.
+
+Readme.md file follows the structure of Readme.md provided by Code Institute **[Code Institute readme template](https://github.com/Code-Institute-Solutions/readme-template)**.
+
+The video titled "README.md - Manual Testing Write Up Overview" **[Manual Testing Write Up](https://www.youtube.com/watch?v=Q66HZgkDSOo)** by Kasia Bogucka made it easy
+to structure the README section on testing.
+
+The video titled **[Readme.md - How, What, When?](https://www.youtube.com/watch?v=Q66HZgkDSOo)** from Code Institute (Kasia Bogucka) helped in the timing and steps for the incremantal structuring and completion of the readme along the project development.
+
+The video titled **[Assessments Q&A: Focus on PP3](https://www.youtube.com/watch?v=xytblDLIqiA&list=PL_7334VduOHsrWzhu5Ta2lrkp016kcBWY&index=3)** from Code Institute (Kasia Bogucka) helped to structure and plan the project including focus on key requirements
+
+I also reviewed a variety of different Readme.md prepared and included in the respective GitHub profiles of Code Institute students. I tried to pick the best of all ideas and suggestions.
 
 ## Media
 
 -  
-  
-
 
