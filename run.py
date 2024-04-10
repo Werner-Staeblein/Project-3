@@ -1,12 +1,12 @@
 import sys
 import time
 import random
+import os
 import hangman_stages
 from opening import opening_image, instructions
 from colorama import Fore
 import capitalcities
 from hangman_stages import get_hangman_stage
-
 
 def typewriter(textentered):
     """
@@ -21,13 +21,11 @@ def typewriter(textentered):
         time.sleep(0.04)
     print()
 
-
 def select_word():
     """"
     Step 1: selects a random city from the list in capitalcities
     """
     return random.choice(capitalcities.capital_cities)
-
 
 def get_unique_letters(word):
     """
@@ -62,6 +60,17 @@ def print_secret_word(secret_city, guessed_letters):
     print("\n")
 
 
+def screen_clearance():
+    """
+    Step 5: User can clear screen by entering 'c'. Important for new quiz rounds
+    """
+    typewriter("Press 'c' and then Enter to clear the screen")
+    clear = input().lower()
+    if clear == 'c':
+        os.system("cls" if os.name == "nt" else "clear")
+    else:
+        print("Screen will not be cleared.")
+
 def start_game(secret_city, username):
     """
     Start the hangman game.
@@ -87,7 +96,6 @@ def start_game(secret_city, username):
                 print("No! The letter {} is not part of the secret city".format(guess))
                 remaining_attempts -= 1
 
-
             print(hangman_stages.get_hangman_stage(remaining_attempts))
             print("\n{} attempts remaining\n".format(remaining_attempts))
             print_secret_word(secret_city, guessed_letters)
@@ -97,6 +105,8 @@ def start_game(secret_city, username):
                 print("Seems you are a master in geography!\n")
                 guessed_correctly = True
                 break
+       
+screen_clearance()
 
 def main():
 

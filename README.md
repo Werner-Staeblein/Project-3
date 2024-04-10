@@ -102,6 +102,8 @@ User eiter enters player name or not. Input is validated. No user input results 
 
 **[Time](https://docs.python.org/3/library/time.html)** time was used to create typewriter effects
 
+**[os](https://docs.python.org/3/library/os.html)** os module was imported to allow for screen to be cleared a game round if user chooses to play another round of the game
+
 
 # Testing
 
@@ -111,7 +113,8 @@ User eiter enters player name or not. Input is validated. No user input results 
     
     Some warnings on code lines slightly too long resulting from use of variable names that might be slightly too long but more explanatory in nature (conflict of variable name being self explanatory versus maximum line length)
 
-
+    Python Linter warns "expected 2 blank lines after class or function". At the same time, requirements for project 3 are: "there are no unnecessary repeated blank lines". So, when TWO lines are added after a function, the linter does NOT report warning. However, when TWO lines are added, the assessment requirements for the project would be violated. I decided to accept the warning of the Python Linter and satisfy the specifications laid out in the assessment guide for project 3.
+    
 **<font color="red">Placeholder final python linter</font>**
     
     
