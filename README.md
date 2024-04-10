@@ -201,6 +201,10 @@ I used these websites to gather information for the code:
 
 - **[Typewriter effect code](https://stackoverflow.com/questions/20302331/typing-effect-in-python)** used for the typewriter effect code
 
+- A book titled "Python3 Schnelleinstieg" authored by Michael Weigend to learn more about syntax of python. **[Python3 Schnelleinstig](https://www.mitp.de/IT-WEB/Programmierung/Python-3-Schnelleinstieg.html)** 
+
+The project is based on the **[Starting Template | GitHub Repository](https://github.com/Code-Institute-Org/p3-template)** provided by Code Institute
+
 
 ## Content
 
