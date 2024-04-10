@@ -124,6 +124,8 @@ def start_game(secret_city, username):
             screen_clearance()
             break
 
+        
+
 def main():
 
     opening_image()
