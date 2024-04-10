@@ -37,7 +37,7 @@ def get_unique_letters(word):
 
 def is_guess_in_secret_word(guess, secret_city):
     """
-    step 3: Check if the guessed letter is in the secret city.
+    Step 3: Check if the guessed letter is in the secret city.
     """
     guess = guess.upper()
     secret_city = secret_city.upper()
@@ -49,6 +49,18 @@ def is_guess_in_secret_word(guess, secret_city):
         return True
     else:
         return False
+
+def print_secret_word(secret_city, guessed_letters):
+    """
+    Step 4: Show guessed letters and leave underscore for letters not guessed and misssing
+    """
+    for letter in secret_city:
+        if letter in guessed_letters:
+            print(" {} ".format(letter), end="")
+        else:
+            print(" _ ", end="")
+    print("\n")
+
 
 def start_game(secret_city, username):
     """
@@ -74,6 +86,13 @@ def start_game(secret_city, username):
             else:
                 print("No! The letter {} is not part of the secret city".format(guess))
                 remaining_attempts -= 1
+
+
+            print(hangman_stages.get_hangman_stage(remaining_attempts))
+            print("\n{} attempts remaining\n".format(remaining_attempts))
+            print_secret_word(secret_city, guessed_letters)
+            print("\n\nNumber of letters guessed: {}\n".format(len(unique_secret_letters)))
+
 
 def main():
 
