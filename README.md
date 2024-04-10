@@ -4,19 +4,21 @@ Capital City is a hangman game to guess the capital cities of different countrie
 The user enters one character at a time to guess a randomly picked capital city. 
 The website is built with Python.
 
-**<font color="red">Placeholder View the live site [LiveSite](URL)</font>**
+The live site can found here: **[Link to Repository](https://project3test-72b134b84518.herokuapp.com/)**
 
-**<font color="red">Placeholder Link to repository on GH [Link to Repository](URL)</font>**
+The GH repository can be found here: **[Link to Repository](https://github.com/Werner-Staeblein/Project-3)**
 
-**<font color="red">Placeholder for screenshot of final on different devices</font>**
+![Multi Device Mockup](documentation/readme/multi_device_mockup.png)
 
 # Table of contents
 
 - **[Intro](#intro)**
-- **[Headings](#headings)**
+- **[Design](#design)**
+- **[Features](#features)**
 - **[Technologies](#technologies)**
-- **[Deployment](#deployment)**
-
+- **[Testing](#testing)**
+- **[Technologies](#technologies)**
+  
 # Intro
 
 ## User Stories
@@ -37,8 +39,8 @@ A user of the application wants to
 - requirement to validate user input
 
 
-# Design & Flow of logic
-                                            
+# Design
+
 The design of the game is limited. The user interface is text-based based on the command-line application developed with Python. Since the game is terminal-based, no images such as .jpg or other image formats can be used.
 
 The logo of Capital City, represented by the Eiffel Tower, is displayed using ASCII
@@ -88,9 +90,7 @@ User eiter enters player name or not. Input is validated. No user input results 
 
 **[ASCII Art Generator](https://emojicombos.com/eiffel-tower-ascii-art)** ASCII art generator for image of Eiffel tower
        
-
-
-
+**[Techsini](https://techsini.com/multi-mockup/)** Multi Device Website Mockup generator 
 
 ### Libraries and python built-in modules used
 
@@ -103,7 +103,6 @@ User eiter enters player name or not. Input is validated. No user input results 
 **[Time](https://docs.python.org/3/library/time.html)** time was used to create typewriter effects
 
 **[os](https://docs.python.org/3/library/os.html)** os module was imported to allow for screen to be cleared a game round if user chooses to play another round of the game
-
 
 # Testing
 
@@ -122,10 +121,10 @@ User eiter enters player name or not. Input is validated. No user input results 
     
     **[Lighthouse](https://developer.chrome.com/docs/devtools/overview?hl=de)** 
     
-    Lighthouse was used to check the website performance, accessibility, best practices, and SEO
-    
-**<font color="red">Placeholder final ligthouse testing</font>**
-    
+    Lighthouse was used to check the website performance, accessibility, best practices, and SEO. Execpt for SEO, score for desktop are satisfactory.
+
+![Multi Device Mockup](documentation/readme/lighthouse_test_desktop.png)
+
     
 3. Manual Testing	
     
@@ -135,7 +134,9 @@ User eiter enters player name or not. Input is validated. No user input results 
 |                 |                  |                  |        |					
 |                 |                  |                  |        |					
 
+## issues not resolved in testing
 
+I tested the application on various screen sizes. As it turned out, the font-size and length of command-line text generated would have to be either increased or lenght limited in size. I was not able to find out a way to make the application responsive with an approach similar to media-queries.
 
 
 
