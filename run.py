@@ -93,6 +93,10 @@ def start_game(secret_city, username):
             print_secret_word(secret_city, guessed_letters)
             print("\n\nNumber of letters guessed: {}\n".format(len(unique_secret_letters)))
 
+            if len(set(guessed_letters)) == len(set(secret_city)):
+                print("Seems you are a master in geography!\n")
+                guessed_correctly = True
+                break
 
 def main():
 
