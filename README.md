@@ -65,8 +65,8 @@ The logo for the application was created with an ASCII Art Generator
 
 **<font color="red">Placeholder for logo screenshot</font>**
 
-Feature 2: Ask for playername
-User eiter enters player name or not. Input is validated. No user input results in default name assigned to user.
+Feature 2: Ask for player name
+User either enters player name or not. Input is validated. No user input results in name assigned to user.
 
 **<font color="red">Placeholder for user name feature</font>**
 
@@ -74,7 +74,7 @@ User eiter enters player name or not. Input is validated. No user input results 
 
 # Technologies
 
-**[Visual Studio Code](https://code.visualstudio.com/)** Visual Studio Code (VS-Code)was used as integrated development environment for the entire project. The GitHub repository was cloned to VS-Code for this purpose
+**[Visual Studio Code](https://code.visualstudio.com/)** Visual Studio Code (VS-Code) was used as integrated development environment for the entire project. The GitHub repository was cloned to VS-Code for this purpose
 
 **[GitHub](https://github.com/)** The code files, README files and assets are stored on GitHub. The code on GitHub was pushed from Git
 
@@ -84,7 +84,7 @@ User eiter enters player name or not. Input is validated. No user input results 
 
 **[Lucid Chart](https://www.lucidchart.com/pages/)** Lucid Chart is a web-based diagramming tool to create flowcharts, wireframes, and visualisations of concepts
 
-**[CI Python Linter](https://pep8ci.herokuapp.com/)** The Code Institute Python Linter was used to validate python code
+**[CI Python Linter](https://pep8ci.herokuapp.com/)** The Code Institute Python Linter was used to validate Python code
 
 **[Python](https://www.python.org/)** Python is an interpreted, high-level and general purpose programming language
 
@@ -110,7 +110,7 @@ User eiter enters player name or not. Input is validated. No user input results 
     
     **[CI Python Linter](https://pep8ci.herokuapp.com/)** The Code Institute Python Linter was used to validate python code and conformity to PEP8 style guide
     
-    Some warnings on code lines slightly too long resulting from use of variable names that might be slightly too long but more explanatory in nature (conflict of variable name being self explanatory versus maximum line length)
+    Some warnings on code lines slightly too long resulting from the use of variable names that might be slightly too long. Variable names are, however, more explanatory (conflict of variable name being self-explanatory versus maximum line length)
 
     Python Linter warns "expected 2 blank lines after class or function". At the same time, requirements for project 3 are: "there are no unnecessary repeated blank lines". So, when TWO lines are added after a function, the linter does NOT report warning. However, when TWO lines are added, the assessment requirements for the project would be violated. I decided to accept the warning of the Python Linter and satisfy the specifications laid out in the assessment guide for project 3.
     
@@ -121,7 +121,7 @@ User eiter enters player name or not. Input is validated. No user input results 
     
     **[Lighthouse](https://developer.chrome.com/docs/devtools/overview?hl=de)** 
     
-    Lighthouse was used to check the website performance, accessibility, best practices, and SEO. Execpt for SEO, score for desktop are satisfactory.
+    Lighthouse was used to check the website performance, accessibility, best practices, and SEO. Except for SEO, the score for desktop are satisfactory.
 
 ![Multi Device Mockup](documentation/readme/lighthouse_test_desktop.png)
 
@@ -134,9 +134,9 @@ User eiter enters player name or not. Input is validated. No user input results 
 |                 |                  |                  |        |					
 |                 |                  |                  |        |					
 
-## issues not resolved in testing
+## Issues not resolved in testing
 
-I tested the application on various screen sizes. As it turned out, the font-size and length of command-line text generated would have to be either increased or lenght limited in size. I was not able to find out a way to make the application responsive with an approach similar to media-queries.
+I tested the application on various screen sizes. As it turned out, the font size and length of command-line text generated would have to be either increased or length limited in size. I was not able to find an approach to make the application responsive with something similar to media-queries.
 
 
 
@@ -144,7 +144,7 @@ I tested the application on various screen sizes. As it turned out, the font-siz
 
 - **Deployment on Heroku**
 
-The website is deployed with Heroku. Heroku is a cloud platform as a service (PaaS) that allows to deply applications in the cloud. 																				
+The website is deployed with Heroku. Heroku is a cloud platform as a service (PaaS) that allows to deploy applications in the cloud. 																				
                                                                                 
 To deploy the website from the GitHub repository to Heroku, several steps need to be taken as follows:																				
                                                                                 
@@ -160,9 +160,9 @@ To deploy the website from the GitHub repository to Heroku, several steps need t
                                                                                 
 5. Click the "Create app" button
                                                                                 
-6. In the Settingstab, select the section Config Vars. The config vars store the so-called environment variables
+6. In the Settings tab, select the section Config Vars. The config vars store the so-called environment variables
                                                                                 
-7. In the Settingstab, select the section Config Vars. The config vars store the so-called environment variables. Click the button ""Reveal Config Vars".							
+7. In the Settings tab, select the section Config Vars. The config vars store the so-called environment variables. Click the button ""Reveal Config Vars".							
                                                                                 
 8. For deployment of this project on Heroku using the CI template, one environment variable is needed. First the key named PORT and the value of 8000. Once key:value are entered, click the button add to add the environment variable. For this project no sensitive data such as usernames, email addresses and passwords are needed. To keep any such data secret, this data could likewise be stored in Config Vars so that this data is not disclosed in any files stored on GitHub
                                                                                 
@@ -171,13 +171,13 @@ As a second step, Node.js has to be added as second and final buildpack. Python 
                                                                                 
 10.  Scroll back to the top of the page. At the same level as the settings tab, click the "Deploy" tab. Inside the deploy tab, GitHub can be selected as deployment method.	Once GitHub is confirmed and clicked as deployment method, the repository name can be searched on GitHub with the "Search" button. Once the correct repository inside GitHub is displayed, click the button "connect"
                                                                                 
-11.  Interim step: Now that repository to be deployed was selected, two options for deployment exist as laid out in the next step																	
+11.  Interim step: Now that repository to be deployed is selected, two options for deployment exist as laid out in the next step																	
                                                                                 
 12.  Either (i) automatic deployment by clicking "Enable Automatic Deploys". In this case, the deployment is updated when changes are pushed to GitHub for the underlying code. This is convenient for development purposes as all changes in the underlying code can be tested immediately in the deployed version. Manual testing in the development phase is facilitated.			
                                                                                 
-13.  or (ii) manual deployment by clicking the "Deploy Branch" button. In this case, a manual deploy would need to be done each and every time a code change is pushed to the GitHub repository. There is no automatic deploy of underlying code changes in GitHub
+13.  or (ii) manual deployment by clicking the "Deploy Branch" button. In this case, a manual deploy would need to be done every time a code change is pushed to the GitHub repository. There is no automatic deployment of underlying code changes in GitHub
                                                                                 
-14.  Once the proces of either step 11 or 12 is completed, the button "View" at the bottom of the page is clicked to open the deployed version of the application
+14.  Once the process of either step 11 or 12 is completed, the button "View" at the bottom of the page is clicked to open the deployed version of the application
 
 - **Clone the repository**
 
@@ -187,7 +187,7 @@ As a second step, Node.js has to be added as second and final buildpack. Python 
 
 # Credits
 
-The Eiffel tower ASCII image was taken from **[Emojicombos](https://emojicombos.com/eiffel-tower-ascii-art)**. No creator mentioned on the page.
+The Eiffel tower ASCII image was taken from **[Emojicombos](https://emojicombos.com/eiffel-tower-ascii-art)**. No creator is mentioned on the page.
                                         
 I used these websites to gather information for the code: 										
                                                             
@@ -205,7 +205,7 @@ I used these websites to gather information for the code:
 
 - **[Typewriter effect code](https://stackoverflow.com/questions/20302331/typing-effect-in-python)** used for the typewriter effect code
 
-- A book titled "Python3 Schnelleinstieg" authored by Michael Weigend to learn more about syntax of python. **[Python3 Schnelleinstig](https://www.mitp.de/IT-WEB/Programmierung/Python-3-Schnelleinstieg.html)** 
+- A book titled "Python3 Schnelleinstieg" authored by Michael Weigend to learn more about the syntax of Python. **[Python3 Schnelleinstig](https://www.mitp.de/IT-WEB/Programmierung/Python-3-Schnelleinstieg.html)** 
 
 The project is based on the **[Starting Template | GitHub Repository](https://github.com/Code-Institute-Org/p3-template)** provided by Code Institute
 
