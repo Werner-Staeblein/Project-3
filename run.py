@@ -59,7 +59,6 @@ def print_secret_word(secret_city, guessed_letters):
             print(" _ ", end="")
     print("\n")
 
-
 def screen_clearance():
     """
     Step 5: User can clear screen by entering 'c'. Important for new quiz rounds
@@ -104,9 +103,26 @@ def start_game(secret_city, username):
             if len(set(guessed_letters)) == len(set(secret_city)):
                 print("Seems you are a master in geography!\n")
                 guessed_correctly = True
-                break
-       
-screen_clearance()
+                break  
+
+        else:
+            if not guessed_correctly:
+                print("--- Sorry, you have lost this game! ---\n")
+        
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        
+        if play_again == 'no':
+            typewriter(f"Thanks for putting your knowledge to the test {username}")
+            sys.exit("Just in case you made up your mind click 'Run Program' to play again")
+        
+        elif play_again == 'yes' or 'ye' or 'y':
+            screen_clearance()
+            break
+
+        else:
+            print("Please enter 'yes' or 'no'.")
+            screen_clearance()
+            break
 
 def main():
 
@@ -142,4 +158,5 @@ def main():
         secret_city = select_word()
         start_game(secret_city, username)
 
-main()
+if __name__ == "__main__":
+    main()
