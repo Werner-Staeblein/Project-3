@@ -72,7 +72,7 @@ def screen_clearance():
 
 def ask_yes_no_question(prompt):
     """
-    Ask the user a yes/no question and return True for 'yes' and False for 'no' to (not) play game again.
+    Step 6: Ask the user a yes/no question and return True for 'yes' and False for 'no' to (not) play game again.
     """
     while True:
         response = input(prompt).strip().lower()
@@ -85,7 +85,7 @@ def ask_yes_no_question(prompt):
 
 def start_game(secret_city, username):
     """
-    Start the hangman game.
+    Step 1 for start of game as per functions above: Start the hangman game.
     """
     guessed_correctly = False
 
