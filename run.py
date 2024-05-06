@@ -70,10 +70,9 @@ def screen_clearance():
     else:
         print("Screen will not be cleared.")
 
-
 def ask_yes_no_question(prompt):
     """
-    Ask the user a yes/no question and return True for 'yes' and False for 'no' to (not) play game again.   
+    Ask the user a yes/no question and return True for 'yes' and False for 'no' to (not) play game again.
     """
     while True:
         response = input(prompt).strip().lower()
@@ -83,7 +82,6 @@ def ask_yes_no_question(prompt):
             return False
         else:
             print("Please enter either 'yes' or 'no'.")
-
 
 def start_game(secret_city, username):
     """
@@ -101,14 +99,14 @@ def start_game(secret_city, username):
             guess_in_secret_word = is_guess_in_secret_word(guess, secret_city)
 
             if guess_in_secret_word:
-                
+
                 if guess in guessed_letters:
                     print("You have already guessed the letter {}".format(guess))
             
                 else:
                     print("Yes! The letter {} is part of the secret city".format(guess))
                     guessed_letters += guess
-            
+   
             else:
                 print("No! The letter {} is not part of the secret city".format(guess))
                 remaining_attempts -= 1
@@ -121,20 +119,20 @@ def start_game(secret_city, username):
             if len(set(guessed_letters)) == len(set(secret_city)):
                 print("Seems you are a master in geography!\n")
                 guessed_correctly = True
-                break  
+                break
 
         else:
             if not guessed_correctly:
                 print("--- Sorry, you have lost this game! ---\n")
-        
+
         play_again = ask_yes_no_question("Do you want to play again? (yes/no): ")
-        
+
         if play_again:
             print("Starting a new game...")
             screen_clearance()
         else:
             typewriter(f"Thanks for putting your knowledge to the test {username}")
-            sys.exit("Just in case you made up your mind click 'Run Program' to play again")       
+            sys.exit("Just in case you made up your mind click 'Run Program' to play again")
 
 def main():
 
