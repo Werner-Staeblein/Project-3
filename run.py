@@ -114,6 +114,7 @@ def start_game(secret_city, username):
                 remaining_attempts -= 1
 
             print("\n{} attempts remaining\n".format(remaining_attempts))
+            print(hangman_stages.get_hangman_stage(remaining_attempts))
             print_secret_word(secret_city, guessed_letters)
             print("\n\nNumber of correct letters guessed: {}\n".format(len(guessed_letters)))
 

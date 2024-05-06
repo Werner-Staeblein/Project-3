@@ -63,12 +63,21 @@ A flowchart was prepared in the planning phase and developed alongside the codin
 Feature 1: Welcome message | Logo
 The logo for the application was created with an ASCII Art Generator
 
-**<font color="red">Placeholder for logo screenshot</font>**
+![opening_page_hangman](documentation/readme/opening_page_hangman.png)
 
 Feature 2: Ask for player name
 User either enters player name or not. Input is validated. No user input results in name assigned to user.
 
-**<font color="red">Placeholder for user name feature</font>**
+![username_entry_game_instructions](documentation/readme/unsername_entry_game_instructions.png)
+
+Feature 3: Letter guessing feature
+User receives feedback on correctness of guess. Number of correct guesses is shown separately.
+The firs guess is BLIND guess for the user not knowing the number of characters in the secret city.
+After the initial/first guess of a character of the secret city, the user is shown the total number of characters in the secret city.
+
+![letter_guessing_feature](documentation/readme/letter_guessing_feature.png)
+
+
 
 
 
@@ -128,11 +137,12 @@ User either enters player name or not. Input is validated. No user input results
     
 3. Manual Testing	
     
-| Test            | Test Description | Expected Outcome | Result |					
-|-----------------|------------------|------------------|--------|					
-|                 |                  |                  |        |					
-|                 |                  |                  |        |					
-|                 |                  |                  |        |					
+Manual testing was done throughout development phase at different stages in stepwise.
+Initial functionality testing, still working with only ONE secret city in the capitalcities.py was done as follows:
+
+**[First_Stage_of_Manual_Testing](documentation/readme/first_round_of_testing_hangman.png)**
+
+
 
 ## Issues not resolved in testing
 
@@ -182,21 +192,21 @@ As a second step, Node.js has to be added as second and final buildpack. Python 
 - **Clone the repository**
 
 1. Log in (or sign up) to GitHub.
-2. Navigate to the GitHub Repository for this project, wernerstaeblein/.
-
+2. Navigate to the GitHub Repository for this project **[Link_to_GitHub_repsitory](https://github.com/Werner-Staeblein/Project-3)** 
 
 # Credits
 
 The Eiffel tower ASCII image was taken from **[Emojicombos](https://emojicombos.com/eiffel-tower-ascii-art)**. No creator is mentioned on the page.
                                         
-I used these websites to gather information for the code: 										
+I used these websites to gather information for the code:
                                                             
-- **[Google](https://www.google.com/)** 										
-- **[mdn](https://developer.mozilla.org/en-US/)** 										
-- **[W3C](https://www.w3.org/)** 										
-- **[W3schools](https://www.w3schools.com/)**										
-- **[Stack Overflow](https://stackoverflow.com/)**										
-- Code Institute Slack Community										
+- **[Google](https://www.google.com/)**								
+- **[mdn](https://developer.mozilla.org/en-US/)**
+- **[W3C](https://www.w3.org/)**							
+- **[W3schools](https://www.w3schools.com/)**									
+- **[Stack Overflow](https://stackoverflow.com/)**
+- Code Institute Slack Community
+- Code Institute Tutor Assistance has helped me to figure out that VS Code has added too many dependencies in the requirements.txt file. Once Tutor Assistance guided me to clean up the requirements.txt file, deployment on heroku worked (prior to that, it did not)
 
 
 ## Code
@@ -205,7 +215,7 @@ I used these websites to gather information for the code:
 
 - **[Typewriter effect code](https://stackoverflow.com/questions/20302331/typing-effect-in-python)** used for the typewriter effect code
 
-- A book titled "Python3 Schnelleinstieg" authored by Michael Weigend to learn more about the syntax of Python. **[Python3 Schnelleinstig](https://www.mitp.de/IT-WEB/Programmierung/Python-3-Schnelleinstieg.html)** 
+- A book titled "Python3 Schnelleinstieg" authored by Michael Weigend to learn more about the syntax of Python. **[Python3 Schnelleinstig](https://www.mitp.de/IT-WEB/Programmierung/Python-3-Schnelleinstieg.html)**
 
 The project is based on the **[Starting Template | GitHub Repository](https://github.com/Code-Institute-Org/p3-template)** provided by Code Institute
 
