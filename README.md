@@ -95,7 +95,9 @@ After the initial/first guess of a character of the secret city, the user is sho
 
 **[ASCII Art Generator](https://emojicombos.com/eiffel-tower-ascii-art)** ASCII art generator for the image of the eiffel tower
        
-**[Techsini](https://techsini.com/multi-mockup/)** Multi Device Website Mockup generator 
+**[Techsini](https://techsini.com/multi-mockup/)** Multi Device Website Mockup generator
+
+**[Browserling]([https://www.browserling.com/)** Browserling is a web-based cross-browser testing software that allows users to test website across desktip and mobile browsers such as Chrome, Firefox, Edge or Opera without downloading and installing the respective browser
 
 ### Libraries and python built-in modules used
 
@@ -139,6 +141,11 @@ Initial functionality testing, still working with only ONE secret city in the ca
 **[First_Stage_of_Manual_Testing](documentation/readme/first_round_of_testing_hangman.png)**
 
 
+4. Browser Testing			
+
+All manual tests completed in browsers that users of the application are likely be using.
+
+I used **[Browserling]([https://www.browserling.com/)** to test the application in different browsers with different browser versions. 										
 
 ## Issues not resolved in testing
 
