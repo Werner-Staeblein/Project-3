@@ -4,7 +4,7 @@ Capital City is a hangman game to guess the capital cities of different countrie
 The user enters one character at a time to guess a randomly picked capital city. 
 The website is built with Python.
 
-The live site can be found here: **[Link to Repository](https://project3test-72b134b84518.herokuapp.com/)**
+The live site can be found following this link: **[Link to Repository](https://project3test-72b134b84518.herokuapp.com/)**
 
 The GH repository can be found here: **[Link to Repository](https://github.com/Werner-Staeblein/Project-3)**
 
@@ -17,8 +17,11 @@ The GH repository can be found here: **[Link to Repository](https://github.com/W
 - **[Features](#features)**
 - **[Technologies](#technologies)**
 - **[Testing](#testing)**
-- **[Technologies](#technologies)**
-  
+- **[Deployment](#deployment)**
+- **[Credits](#credits)**
+- **[Code](#code)**
+- **[Content](#content)**
+ 
 # Intro
 
 ## User Stories
@@ -28,16 +31,20 @@ Capital City is for users who want to test their knowledge about the capital cit
 A user of the application wants to
 
 - easily start and view the instructions for the game
-- understand easily the purpose of the application
+- easily understand the purpose of the application
 - have clear instructions on what to do and how to use the application
 - have instructions and guidance while playing the game
+- have user-friendly feedback providing error reporting through input validation
+- know the success or failure while proceeding to guess the secret city
 - be presented a different capital city to guess when playing the game repeatedly
 - wants to play the game again once a guessing round is completed
 
-**<font color="red">Placeholder for site administrator experience</font>**
+The administrator of the application wants to
 
-- requirement to validate user input
-
+- have an easily maintainable and well-documented code base
+- have the option to quickly change the game's content (for instance, guess of car brands rather than capital cities)
+- be able to moderae user-generated input to ensure a positive user experience for the player of the game (input validation and handling of potential user errors)
+- be able to customize the level of difficulty for the game or settings of the game (for instance, changing the allowed attempts per secret city)
 
 # Design
 
@@ -60,22 +67,40 @@ A flowchart was prepared in the planning phase and developed alongside the codin
                                             
 # Features
 
-Feature 1: Welcome message | Logo
+**Feature 1**: Welcome message | Logo
 The logo for the application was created with an ASCII Art Generator
 
 ![opening_page_hangman](documentation/readme/opening_page_hangman.png)
 
-Feature 2: Ask for player's name
+**Feature 2**: Ask for player's name
 User either enters player's name or not. Input is validated. No user input results in default name assigned to the user.
 
 ![username_entry_game_instructions](documentation/readme/unsername_entry_game_instructions.png)
 
-Feature 3: Letter guessing feature
+**Feature 3**: Letter guessing feature
 User receives feedback on correctness of user guess. Number of correct guesses is shown separately.
 The first guess is BLIND guess for the user not knowing the number of characters in the secret city.
 After the initial/first guess of a character of the secret city, the user is shown the total number of characters in the secret city.
 
 ![letter_guessing_feature](documentation/readme/letter_guessing_feature.png)
+
+**Feature 4**: Remaining attempts and correct attempts shown
+User receives feedback on remaining attempts while hangman is building according to stages of the game. Visual feedback and descriptive feedback to user.
+
+![user_feedback_on_remaining_attempts](documentation/readme/user_feedback_on_remaining_attempts_and_correct_guesses.png)
+
+**Feature 5**: User feedback on user entry of more than one letter or if letter already guessed is repeated
+User is provided feedback if more than one letter was guessed. In this case, the user looses one attempt for guessing as a result of not following the easy-to-follow game instructions.
+
+User likewise receives feedback if letter is guessed that has already been guessed before. User is not deducted a guessing attempt if a letter is guessed that was already guessed before.
+
+![user_feedback_on_entry_of_more_than_one_letter](documentation/readme/user_feedback_on_entry_of_more_than_one_letter.png)
+
+![user_feedback_on_repeat_of_guess](documentation/readme/user_feedback_on_repeat_of_guess.png)
+
+
+
+
 
 # Technologies
 
@@ -121,7 +146,7 @@ After the initial/first guess of a character of the secret city, the user is sho
 
     Python Linter warns "expected 2 blank lines after class or function". At the same time, requirements for project 3 are: "there are no unnecessary repeated blank lines". So, when TWO lines are added after a function, the linter does NOT report a warning. However, when TWO lines are added, the assessment requirements for the project would be violated. I decided to accept the warning of the Python Linter and satisfy the specifications laid out in the assessment guide for project 3.
     
-**<font color="red">Placeholder final python linter</font>**
+**<font color="red">Placeholder final python linter image</font>**
     
     
 2. Validator Testing	
@@ -150,8 +175,6 @@ I used **[Browserling]([https://www.browserling.com/)** to test the application 
 ## Issues not resolved in testing
 
 I tested the application on various screen sizes. As it turned out, the font size and length of command-line text generated would have to be either increased or length limited in size. I was not able to find an approach to make the application responsive with something similar to media-queries.
-
-
 
 # Deployment
 
@@ -232,7 +255,7 @@ I used these websites to gather information for the code:
 - Code Institute Tutor Assistance has helped me to figure out that VS Code has added too many dependencies in the requirements.txt file. Once Tutor Assistance guided me to clean up the requirements.txt file, deployment on heroku worked (prior to that, it did not)
 
 
-## Code
+# Code
 
 - Tutorials from Code Institute's resources on python essentials.
 
@@ -242,8 +265,12 @@ I used these websites to gather information for the code:
 
 The project is based on the **[Starting Template | GitHub Repository](https://github.com/Code-Institute-Org/p3-template)** provided by Code Institute
 
+- The hangman stages were taken from the **[Build a Hangman Game for the Command Line in Python](https://realpython.com/python-hangman/)** by Jon Fincher
 
-## Content
+- I used **[How to Code the Hangman Game in Python [Step-by-Step]](https://codefather.tech/blog/hangman-game-python/)** as a further reference to understand the logic of the code and necessary functions to build the game
+
+
+# Content
 
 Text content for this website was written by the owner.
 
@@ -254,11 +281,9 @@ to structure the README section on testing.
 
 The video titled **[Readme.md - How, What, When?](https://www.youtube.com/watch?v=Q66HZgkDSOo)** from Code Institute (Kasia Bogucka) helped in the timing and steps for the incremental structuring and completion of the readme along the project development.
 
-The video titled **[Assessments Q&A: Focus on PP3](https://www.youtube.com/watch?v=xytblDLIqiA&list=PL_7334VduOHsrWzhu5Ta2lrkp016kcBWY&index=3)** from Code Institute (Kasia Bogucka) helped to structure and plan the project including focus on key requirements
+The video titled **[Assessments Q&A: Focus on PP3](https://www.youtube.com/watch?v=xytblDLIqiA&list=PL_7334VduOHsrWzhu5Ta2lrkp016kcBWY&index=3)** from Code Institute (Kasia Bogucka) helped to structure and plan the project including focus on key requirements.
 
 I also reviewed a variety of different Readme.md prepared and included in the respective GitHub profiles of Code Institute students. I tried to pick the best of all ideas and suggestions.
 
-## Media
-
--  
-
+*****************
+[Back to top](#table-of-contents)
