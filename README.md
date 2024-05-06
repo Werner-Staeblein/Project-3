@@ -4,7 +4,7 @@ Capital City is a hangman game to guess the capital cities of different countrie
 The user enters one character at a time to guess a randomly picked capital city. 
 The website is built with Python.
 
-The live site can found here: **[Link to Repository](https://project3test-72b134b84518.herokuapp.com/)**
+The live site can be found here: **[Link to Repository](https://project3test-72b134b84518.herokuapp.com/)**
 
 The GH repository can be found here: **[Link to Repository](https://github.com/Werner-Staeblein/Project-3)**
 
@@ -29,9 +29,9 @@ A user of the application wants to
 
 - easily start and view the instructions for the game
 - understand easily the purpose of the application
-- have clear instructions what to do and how to use the application
+- have clear instructions on what to do and how to use the application
 - have instructions and guidance while playing the game
-- be presented different questions (a different capital city guess) when playing the game
+- be presented a different capital city to guess when playing the game repeatedly
 - wants to play the game again once a guessing round is completed
 
 **<font color="red">Placeholder for site administrator experience</font>**
@@ -65,39 +65,35 @@ The logo for the application was created with an ASCII Art Generator
 
 ![opening_page_hangman](documentation/readme/opening_page_hangman.png)
 
-Feature 2: Ask for player name
-User either enters player name or not. Input is validated. No user input results in name assigned to user.
+Feature 2: Ask for player's name
+User either enters player's name or not. Input is validated. No user input results in default name assigned to the user.
 
 ![username_entry_game_instructions](documentation/readme/unsername_entry_game_instructions.png)
 
 Feature 3: Letter guessing feature
-User receives feedback on correctness of guess. Number of correct guesses is shown separately.
-The firs guess is BLIND guess for the user not knowing the number of characters in the secret city.
+User receives feedback on correctness of user guess. Number of correct guesses is shown separately.
+The first guess is BLIND guess for the user not knowing the number of characters in the secret city.
 After the initial/first guess of a character of the secret city, the user is shown the total number of characters in the secret city.
 
 ![letter_guessing_feature](documentation/readme/letter_guessing_feature.png)
 
-
-
-
-
 # Technologies
 
-**[Visual Studio Code](https://code.visualstudio.com/)** Visual Studio Code (VS-Code) was used as integrated development environment for the entire project. The GitHub repository was cloned to VS-Code for this purpose
+**[Visual Studio Code](https://code.visualstudio.com/)** Visual Studio Code (VS-Code) was used as integrated development environment (IDE) for the entire project. The GitHub repository was cloned to VS-Code for this purpose
 
-**[GitHub](https://github.com/)** The code files, README files and assets are stored on GitHub. The code on GitHub was pushed from Git
+**[GitHub](https://github.com/)** The code files, README files, and assets are stored on GitHub. The code on GitHub was pushed from Git
 
 **[Git](https://git-scm.com/)** The version control system Git was used to document the development of the application and to push code to the GitHub repository. The specific reasons for the commit are reflected in the respective commit message
             
 **[Heroku](https://www.heroku.com/)** Heroku is a platform as a service (PaaS) to build, run, and operate applications cloud-based. It was used to deploy the website
 
-**[Lucid Chart](https://www.lucidchart.com/pages/)** Lucid Chart is a web-based diagramming tool to create flowcharts, wireframes, and visualisations of concepts
+**[Lucid Chart](https://www.lucidchart.com/pages/)** Lucid Chart is a web-based diagramming tool to create flowcharts, wireframes, and visualisation of concepts
 
 **[CI Python Linter](https://pep8ci.herokuapp.com/)** The Code Institute Python Linter was used to validate Python code
 
 **[Python](https://www.python.org/)** Python is an interpreted, high-level and general purpose programming language
 
-**[ASCII Art Generator](https://emojicombos.com/eiffel-tower-ascii-art)** ASCII art generator for image of Eiffel tower
+**[ASCII Art Generator](https://emojicombos.com/eiffel-tower-ascii-art)** ASCII art generator for the image of the eiffel tower
        
 **[Techsini](https://techsini.com/multi-mockup/)** Multi Device Website Mockup generator 
 
@@ -111,7 +107,7 @@ After the initial/first guess of a character of the secret city, the user is sho
 
 **[Time](https://docs.python.org/3/library/time.html)** time was used to create typewriter effects
 
-**[os](https://docs.python.org/3/library/os.html)** os module was imported to allow for screen to be cleared a game round if user chooses to play another round of the game
+**[os](https://docs.python.org/3/library/os.html)** os module was imported to allow for the screen to be cleared if user chooses to play another round of the game
 
 # Testing
 
@@ -121,7 +117,7 @@ After the initial/first guess of a character of the secret city, the user is sho
     
     Some warnings on code lines slightly too long resulting from the use of variable names that might be slightly too long. Variable names are, however, more explanatory (conflict of variable name being self-explanatory versus maximum line length)
 
-    Python Linter warns "expected 2 blank lines after class or function". At the same time, requirements for project 3 are: "there are no unnecessary repeated blank lines". So, when TWO lines are added after a function, the linter does NOT report warning. However, when TWO lines are added, the assessment requirements for the project would be violated. I decided to accept the warning of the Python Linter and satisfy the specifications laid out in the assessment guide for project 3.
+    Python Linter warns "expected 2 blank lines after class or function". At the same time, requirements for project 3 are: "there are no unnecessary repeated blank lines". So, when TWO lines are added after a function, the linter does NOT report a warning. However, when TWO lines are added, the assessment requirements for the project would be violated. I decided to accept the warning of the Python Linter and satisfy the specifications laid out in the assessment guide for project 3.
     
 **<font color="red">Placeholder final python linter</font>**
     
@@ -130,14 +126,14 @@ After the initial/first guess of a character of the secret city, the user is sho
     
     **[Lighthouse](https://developer.chrome.com/docs/devtools/overview?hl=de)** 
     
-    Lighthouse was used to check the website performance, accessibility, best practices, and SEO. Except for SEO, the score for desktop are satisfactory.
+    Lighthouse was used to check the website's performance, accessibility, best practices, and SEO. Except for SEO, the score for desktop is satisfactory.
 
 ![Multi Device Mockup](documentation/readme/lighthouse_test_desktop.png)
 
     
 3. Manual Testing	
     
-Manual testing was done throughout development phase at different stages in stepwise.
+Manual testing was done throughout the development phase at different stages and stepwise.
 Initial functionality testing, still working with only ONE secret city in the capitalcities.py was done as follows:
 
 **[First_Stage_of_Manual_Testing](documentation/readme/first_round_of_testing_hangman.png)**
@@ -155,14 +151,10 @@ I tested the application on various screen sizes. As it turned out, the font siz
 - **Pushing code to GitHub**
 
 `git add .` and `git add -A`: Commands used to stage code and README.md for commitment to GitHub together with the commit message.
+
 `git commit -m "commit message"`: Command used to commit changes to the GitHub repository. Heroku will subsequently access the GitHub repository for deployment on Heroku.
+
 `git push`: Command used to store all code committed with commit messages on GitHub repository.
-
-
-
-
-
-
 
 - **Deployment on Heroku**
 
@@ -170,7 +162,7 @@ The website is deployed with Heroku. Heroku is a cloud platform as a service (Pa
                                                                                 
 To deploy the website from the GitHub repository to Heroku, several steps need to be taken as follows:																				
                                                                                 
-1. Using the command pip freeze > requirements.txt, a list of requirements in the requirements.txt is created.The command pip freeze generates a list of installed Python packages including their versions and the redirection operator ensures that the output of the command will be placed into the requirements.txt file.
+1. Using the command pip freeze > requirements.txt, a list of requirements in the requirements.txt is created. The command pip freeze generates a list of installed Python packages including their versions and the redirection operator ensures that the output of the command will be placed into the requirements.txt file.
 
 **Special attention**: the pip freeze command used in VS Code may create a list of dependencies that are not needed for deployment. Rather, VS Code is adding TOO MANY dependencies that may make deployment impossible on Heroku. The key dependency for this project is colorama. Ensure that only this dependency is shown in the requirements.txt file once pip freeze > requirements.txt was completed in either VS Code or GitPod
                                                                                 
@@ -186,7 +178,7 @@ To deploy the website from the GitHub repository to Heroku, several steps need t
                                                                                 
 7. In the Settings tab, select the section Config Vars. The config vars store the so-called environment variables. Click the button ""Reveal Config Vars".							
                                                                                 
-8. For deployment of this project on Heroku using the CI template, one environment variable is needed. First the key named PORT and the value of 8000. Once key:value are entered, click the button add to add the environment variable. For this project no sensitive data such as usernames, email addresses and passwords are needed. To keep any such data secret, this data could likewise be stored in Config Vars so that this data is not disclosed in any files stored on GitHub
+8. For deployment of this project on Heroku using the CI template, one environment variable is needed. First: The key named PORT and the value of 8000. Once key:value are entered, click the button add to add the environment variable. For this project no sensitive data such as usernames, email addresses, and passwords are needed. To keep any such data secret, this data could likewise be stored in Config Vars so that this data is not disclosed in any files stored on GitHub
                                                                                 
 9. Still within the Settings tab, the button "Add buildpack" must be clicked. As the first of two buildpacks to be added, Python is added as. Once Python is entered, click "Save".
 As a second step, Node.js has to be added as second and final buildpack. Python must be the first buildpack and Node.js the second. The two buildpacks must be in this order.
@@ -253,7 +245,7 @@ Readme.md file follows the structure of Readme.md provided by Code Institute **[
 The video titled "README.md - Manual Testing Write Up Overview" **[Manual Testing Write Up](https://www.youtube.com/watch?v=Q66HZgkDSOo)** by Kasia Bogucka made it easy
 to structure the README section on testing.
 
-The video titled **[Readme.md - How, What, When?](https://www.youtube.com/watch?v=Q66HZgkDSOo)** from Code Institute (Kasia Bogucka) helped in the timing and steps for the incremantal structuring and completion of the readme along the project development.
+The video titled **[Readme.md - How, What, When?](https://www.youtube.com/watch?v=Q66HZgkDSOo)** from Code Institute (Kasia Bogucka) helped in the timing and steps for the incremental structuring and completion of the readme along the project development.
 
 The video titled **[Assessments Q&A: Focus on PP3](https://www.youtube.com/watch?v=xytblDLIqiA&list=PL_7334VduOHsrWzhu5Ta2lrkp016kcBWY&index=3)** from Code Institute (Kasia Bogucka) helped to structure and plan the project including focus on key requirements
 
