@@ -70,6 +70,21 @@ def screen_clearance():
     else:
         print("Screen will not be cleared.")
 
+
+def ask_yes_no_question(prompt):
+    """
+    Ask the user a yes/no question and return True for 'yes' and False for 'no' to (not) play game again.   
+    """
+    while True:
+        response = input(prompt).strip().lower()
+        if response in {'yes', 'ye', 'y'}:
+            return True
+        elif response in {'no', 'n'}:
+            return False
+        else:
+            print("Please enter either 'yes' or 'no'.")
+
+
 def start_game(secret_city, username):
     """
     Start the hangman game.
@@ -79,26 +94,28 @@ def start_game(secret_city, username):
     while True:
         remaining_attempts = 6
         guessed_letters = ""
-        unique_secret_letters = get_unique_letters(secret_city)
+        unique_secret_letters = set(secret_city)
 
         while remaining_attempts > 0 and len(guessed_letters) < len(unique_secret_letters):
             guess = input("Guess a letter of the secret city: ").upper()
             guess_in_secret_word = is_guess_in_secret_word(guess, secret_city)
 
             if guess_in_secret_word:
+                
                 if guess in guessed_letters:
                     print("You have already guessed the letter {}".format(guess))
+            
                 else:
                     print("Yes! The letter {} is part of the secret city".format(guess))
                     guessed_letters += guess
+            
             else:
                 print("No! The letter {} is not part of the secret city".format(guess))
                 remaining_attempts -= 1
 
-            print(hangman_stages.get_hangman_stage(remaining_attempts))
             print("\n{} attempts remaining\n".format(remaining_attempts))
             print_secret_word(secret_city, guessed_letters)
-            print("\n\nNumber of letters guessed: {}\n".format(len(unique_secret_letters)))
+            print("\n\nNumber of correct letters guessed: {}\n".format(len(guessed_letters)))
 
             if len(set(guessed_letters)) == len(set(secret_city)):
                 print("Seems you are a master in geography!\n")
@@ -109,22 +126,14 @@ def start_game(secret_city, username):
             if not guessed_correctly:
                 print("--- Sorry, you have lost this game! ---\n")
         
-        play_again = input("Do you want to play again? (yes/no): ").lower()
+        play_again = ask_yes_no_question("Do you want to play again? (yes/no): ")
         
-        if play_again == 'no':
-            typewriter(f"Thanks for putting your knowledge to the test {username}")
-            sys.exit("Just in case you made up your mind click 'Run Program' to play again")
-        
-        elif play_again == 'yes' or 'ye' or 'y':
+        if play_again:
+            print("Starting a new game...")
             screen_clearance()
-            break
-
         else:
-            print("Please enter 'yes' or 'no'.")
-            screen_clearance()
-            break
-
-        
+            typewriter(f"Thanks for putting your knowledge to the test {username}")
+            sys.exit("Just in case you made up your mind click 'Run Program' to play again")       
 
 def main():
 
