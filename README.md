@@ -152,6 +152,18 @@ I tested the application on various screen sizes. As it turned out, the font siz
 
 # Deployment
 
+- **Pushing code to GitHub**
+
+`git add .` and `git add -A`: Commands used to stage code and README.md for commitment to GitHub together with the commit message.
+`git commit -m "commit message"`: Command used to commit changes to the GitHub repository. Heroku will subsequently access the GitHub repository for deployment on Heroku.
+`git push`: Command used to store all code committed with commit messages on GitHub repository.
+
+
+
+
+
+
+
 - **Deployment on Heroku**
 
 The website is deployed with Heroku. Heroku is a cloud platform as a service (PaaS) that allows to deploy applications in the cloud. 																				
@@ -189,10 +201,22 @@ As a second step, Node.js has to be added as second and final buildpack. Python 
                                                                                 
 14.  Once the process of either step 11 or 12 is completed, the button "View" at the bottom of the page is clicked to open the deployed version of the application
 
-- **Clone the repository**
+- **Download or clone the repository from GitHub**
+
+Download of repository as follows:
 
 1. Log in (or sign up) to GitHub.
 2. Navigate to the GitHub Repository for this project **[Link_to_GitHub_repsitory](https://github.com/Werner-Staeblein/Project-3)** 
+3. Inside the GitHub page of the repository selected, click the green button named 'Code'. Inside the code button, click "Download ZIP".
+4. The dowloaded ZIP file can be extracted to a folder on the PC.
+
+Clone repository as follows:
+
+1.  Inside VS Code open the explorer tab on the upper left.
+2.  Click "Clone Repository"
+3.  Inside the terminal field that shows up you can now read "Repository name (type to search)"
+4.  Inside the field where search for the repository is entered, copy and paste the name of the repository that can be found under this link: **[Link_to_GitHub_repsitory](https://github.com/Werner-Staeblein/Project-3)**
+
 
 # Credits
 
