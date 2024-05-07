@@ -45,6 +45,8 @@ The administrator of the application wants to
 - have the option to quickly change the game's content (for instance, guess of car brands rather than capital cities)
 - be able to moderae user-generated input to ensure a positive user experience for the player of the game (input validation and handling of potential user errors)
 - be able to customize the level of difficulty for the game or settings of the game (for instance, changing the allowed attempts per secret city)
+- handle errors caused by user actions (for instance through messages to the user)
+- validate the user inputs before progressing the user to the next step of the game
 
 # Design
 
@@ -97,10 +99,6 @@ User likewise receives feedback if letter is guessed that has already been guess
 ![user_feedback_on_entry_of_more_than_one_letter](documentation/readme/user_feedback_on_entry_of_more_than_one_letter.png)
 
 ![user_feedback_on_repeat_of_guess](documentation/readme/user_feedback_on_repeat_of_guess.png)
-
-
-
-
 
 # Technologies
 
@@ -156,8 +154,7 @@ User likewise receives feedback if letter is guessed that has already been guess
     Lighthouse was used to check the website's performance, accessibility, best practices, and SEO. Except for SEO, the score for desktop is satisfactory.
 
 ![Multi Device Mockup](documentation/readme/lighthouse_test_desktop.png)
-
-    
+   
 3. Manual Testing	
     
 Manual testing was done throughout the development phase at different stages and stepwise.
@@ -165,9 +162,7 @@ Initial functionality testing, still working with only ONE secret city in the ca
 
 **[Manual_Testing_Hangman_Page_1](documentation/readme/manual_testing_hangman_page_1.png)**
 
-
 **[Manual_Testing_Hangman_Page_2](documentation/readme/manual_testing_hangman_page_2.png)**
-
 
 **[Manual_Testing_Hangman_Page_3](documentation/readme/manual_testing_hangman_page_3.png)**
 
@@ -244,7 +239,6 @@ Clone repository as follows:
 3.  Inside the terminal field that shows up you can now read "Repository name (type to search)"
 4.  Inside the field where search for the repository is entered, copy and paste the name of the repository that can be found under this link: **[Link_to_GitHub_repsitory](https://github.com/Werner-Staeblein/Project-3)**
 
-
 # Credits
 
 The Eiffel tower ASCII image was taken from **[Emojicombos](https://emojicombos.com/eiffel-tower-ascii-art)**. No creator is mentioned on the page.
@@ -259,7 +253,6 @@ I used these websites to gather information for the code:
 - Code Institute Slack Community
 - Code Institute Tutor Assistance has helped me to figure out that VS Code has added too many dependencies in the requirements.txt file. Once Tutor Assistance guided me to clean up the requirements.txt file, deployment on heroku worked (prior to that, it did not)
 
-
 # Code
 
 - Tutorials from Code Institute's resources on python essentials.
@@ -273,7 +266,6 @@ The project is based on the **[Starting Template | GitHub Repository](https://gi
 - The hangman stages were taken from the **[Build a Hangman Game for the Command Line in Python](https://realpython.com/python-hangman/)** by Jon Fincher
 
 - I used **[How to Code the Hangman Game in Python [Step-by-Step]](https://codefather.tech/blog/hangman-game-python/)** as a further reference to understand the logic of the code and necessary functions to build the game
-
 
 # Content
 
