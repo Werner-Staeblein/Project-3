@@ -26,6 +26,8 @@ def select_word():
     Step 1: selects a random city from the list in capitalcities
     """
     return random.choice(capitalcities.capital_cities)
+    print("Selected city:", selected_city) 
+    return selected_city
 
 def get_unique_letters(word):
     """
@@ -64,6 +66,7 @@ def screen_clearance():
     clear = input().lower()
     if clear == 'c':
         os.system("cls" if os.name == "nt" else "clear")
+        secret_word = ""      
     else:
         print("Screen will not be cleared.")
 
@@ -87,6 +90,7 @@ def start_game(secret_city, username):
     guessed_correctly = False
 
     while True:
+        secret_city = select_word()
         remaining_attempts = 6
         guessed_letters = ""
         unique_secret_letters = set(secret_city)
@@ -132,7 +136,6 @@ def start_game(secret_city, username):
             sys.exit("Just in case you made up your mind click 'Run Program' to play again")
 
 def main():
-
     opening_image()
 
     print()
