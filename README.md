@@ -63,6 +63,12 @@ A flowchart was prepared in the planning phase and developed alongside the codin
 <summary> Click here for the flowchart </summary>
 <br>									
 
+**Final flowchart |diagram of logical flow**
+
+![Flowchart](documentation/readme/hangman_model_diagram.png)
+
+**Inital start and draft of the flowchart**
+
 ![Flowchart](documentation/readme/initial_flow_chart.png)
 
 </details>										
@@ -100,6 +106,21 @@ User likewise receives feedback if letter is guessed that has already been guess
 
 ![user_feedback_on_repeat_of_guess](documentation/readme/user_feedback_on_repeat_of_guess.png)
 
+**Feature 6**: Winners message and option to replay the game
+Winners message on successful guess of secret city. User has option to replay the game. A randomized capita city (secret city) is drawn from the capitalcities.py
+
+![winners_message](documentation/readme/winners_message_and_repeat_option.png)
+
+**Feature 7**: Clear screen feature for a new game
+User has option to clear screen for a new game round
+
+![Clear_screen_feature](documentation/readme/clear_screen_feature_with_new_game.png)
+
+**Feature 8**: Farewell message
+Farewell message if users decides to discontinue the game. User has option to make up the mind and press "Run Program" button to restart a game. Game restarts with instructions and entry of user name.
+
+![Clear_screen_feature](documentation/readme/farewell_message_with_option_to_click_button.png)
+
 # Technologies
 
 **[Visual Studio Code](https://code.visualstudio.com/)** Visual Studio Code (VS-Code) was used as integrated development environment (IDE) for the entire project. The GitHub repository was cloned to VS-Code for this purpose
@@ -128,7 +149,7 @@ User likewise receives feedback if letter is guessed that has already been guess
 
 **[Random Module](https://docs.python.org/3/library/random.html)** The random module was used to pick a random capital city from a list of cities
 
-**[Colorama](https://pypi.org/project/colorama/)** Installed with pip install colorama. Used to change colors of UI
+**[Colorama](https://pypi.org/project/colorama/)** Installed with pip install colorama. Required and used to change colors of UI
 
 **[Time](https://docs.python.org/3/library/time.html)** time was used to create typewriter effects
 
