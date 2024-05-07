@@ -60,9 +60,6 @@ def print_secret_word(secret_city, guessed_letters):
     print("\n")
 
 def screen_clearance():
-    """
-    Step 5: User can clear screen by entering 'c'. Important for new quiz rounds
-    """
     typewriter("Press 'c' and then Enter to clear the screen")
     clear = input().lower()
     if clear == 'c':

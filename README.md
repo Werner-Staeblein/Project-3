@@ -4,9 +4,9 @@ Capital City is a hangman game to guess the capital cities of different countrie
 The user enters one character at a time to guess a randomly picked capital city. 
 The website is built with Python.
 
-The live site can be found following this link: **[Link to Repository](https://project3test-72b134b84518.herokuapp.com/)**
+The live site can be found by following this link: **[Live Website](https://project3test-72b134b84518.herokuapp.com/)**
 
-The GH repository can be found here: **[Link to Repository](https://github.com/Werner-Staeblein/Project-3)**
+The GitHub repository can be found here: **[Link to GitHub Repository](https://github.com/Werner-Staeblein/Project-3)**
 
 ![Multi Device Mockup](documentation/readme/multi_device_mockup.png)
 
@@ -163,8 +163,13 @@ User likewise receives feedback if letter is guessed that has already been guess
 Manual testing was done throughout the development phase at different stages and stepwise.
 Initial functionality testing, still working with only ONE secret city in the capitalcities.py was done as follows:
 
-**[First_Stage_of_Manual_Testing](documentation/readme/first_round_of_testing_hangman.png)**
+**[Manual_Testing_Hangman_Page_1](documentation/readme/manual_testing_hangman_page_1.png)**
 
+
+**[Manual_Testing_Hangman_Page_2](documentation/readme/manual_testing_hangman_page_2.png)**
+
+
+**[Manual_Testing_Hangman_Page_3](documentation/readme/manual_testing_hangman_page_3.png)**
 
 4. Browser Testing			
 
