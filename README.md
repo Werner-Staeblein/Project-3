@@ -316,5 +316,11 @@ The video titled **[Assessments Q&A: Focus on PP3](https://www.youtube.com/watch
 
 I also reviewed a variety of different Readme.md prepared and included in the respective GitHub profiles of Code Institute students. I tried to pick the best of all ideas and suggestions.
 
+# Acknowledgements
+
+Special thanks to my mentor David Bowers. Incredible to see how much value I was able to add with his ideas and instructions. All advice provided by David into the finalisation and thanks to his guidance, the development process including documentation has become much more efficient.
+
+My fellow students at CI have helped a lot with their various postings, questions, answers with myself being able to pick up ideas, avoid mistakes and stay motivated
+
 *****************
 [Back to top](#table-of-contents)
