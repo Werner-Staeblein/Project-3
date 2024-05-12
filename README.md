@@ -171,12 +171,10 @@ In its current stage, the program is more of the nature of a MVP. Further featur
     
     **[CI Python Linter](https://pep8ci.herokuapp.com/)** The Code Institute Python Linter was used to validate python code and conformity to PEP8 style guide
     
-    Some warnings on code lines slightly too long resulting from the use of variable names that might be slightly too long. Variable names are, however, more explanatory (conflict of variable name being self-explanatory versus maximum line length)
-
-    Python Linter warns "expected 2 blank lines after class or function". At the same time, requirements for project 3 are: "there are no unnecessary repeated blank lines". So, when TWO lines are added after a function, the linter does NOT report a warning. However, when TWO lines are added, the assessment requirements for the project would be violated. I decided to accept the warning of the Python Linter and satisfy the specifications laid out in the assessment guide for project 3.
-    
-**<font color="red">Placeholder final python linter image</font>**
-    
+    I installed and used autopep8 with `pip install autopep8`. After automatic review of files with autopep, I spent time to polish the remainder of the code to have no indenting errors.
+    PEP8 CI Python Linter shows "no errors" after completion of this process.
+       
+    ![Pep8 CI Python Linter](documentation/readme/pep8_python_linter_results.png)    
     
 2. Validator Testing	
     
