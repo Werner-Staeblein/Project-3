@@ -199,7 +199,7 @@ Initial functionality testing, still working with only ONE secret city in the ca
 
 All manual tests completed in browsers that users of the application are likely be using.
 
-I used **[Browserling]([https://www.browserling.com/)** to test the application in different browsers with different browser versions. 										
+I used **[Browserling](https://www.browserling.com/)** to test the application in different browsers with different browser versions. 										
 
 ## Fixed Bugs
 In the final testing, I included all cities from capitalcities.py. Until then, I only played and tested with "Paris" to facilitate testing and functionality testing. Initially, the new secret_city was called in the start_game function and the main()-function. It took a while to fix the bug that no new city was randomly chosen when a new game round starts. Eventually, the solution was to move the random choice of a new city, the select_word()-function, inside the while loop of the start_game function
