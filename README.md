@@ -55,7 +55,7 @@ The design of the game is limited. The user interface is text-based based on the
 The logo of Capital City, represented by the Eiffel Tower, is displayed using ASCII
 art. The stages of the game are displayed with multiline strings.
 
-## Flowchart                                       
+## Flowchart | Data Flow
     								        
 A flowchart was prepared in the planning phase and developed alongside the coding of the command-line application. The flowchart was created with **[Lucidchart](https://www.lucidchart.com/pages/)**
 
@@ -120,6 +120,16 @@ User has option to clear screen for a new game round
 Farewell message if users decides to discontinue the game. User has option to make up the mind and press "Run Program" button to restart a game. Game restarts with instructions and entry of user name.
 
 ![Clear_screen_feature](documentation/readme/farewell_message_with_option_to_click_button.png)
+
+## Future features
+
+In its current stage, the program is more of the nature of a MVP. Further features can be added such as, for instance:
+
+- Count score of correct guesses (number of times a user has guessed secret city correctly)
+- Timer (speed of guessing the secret city)
+- High score list of users that played the game
+- Expand list of secret cities with more difficult cities to guess
+- Change/variation of colors for correct/incorrect guesses
 
 # Technologies
 

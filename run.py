@@ -154,6 +154,15 @@ def start_game(secret_city, username):
 
 
 def main():
+    """
+    Function to start and run the capital cities guessing game.
+
+    This function starts by displaying the opening image, welcoming the player
+    to the game, and obtaining the player's name. If no name is provided,\
+    the player is assigned the default name "Geo, the champ of capital\
+    cities knowledge, aka G3C". The function proceeds to display instructions\
+    and start the game by selecting a secret city for the player to guess.
+    """
     opening_image()
 
     print()
