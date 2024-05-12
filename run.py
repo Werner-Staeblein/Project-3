@@ -8,6 +8,7 @@ from colorama import Fore
 import capitalcities
 from hangman_stages import get_hangman_stage
 
+
 def typewriter(textentered):
     """
     Creates typewriter effect for text displayed.
@@ -21,19 +22,22 @@ def typewriter(textentered):
         time.sleep(0.04)
     print()
 
+
 def select_word():
     """"
     Step 1: selects a random city from the list in capitalcities
     """
     return random.choice(capitalcities.capital_cities)
-    print("Selected city:", selected_city) 
+    print("Selected city:", selected_city)
     return selected_city
+
 
 def get_unique_letters(word):
     """
     Step 2: Convert the secret word into a set to remove duplicates.
     """
     return "".join(set(word))
+
 
 def is_guess_in_secret_word(guess, secret_city):
     """
@@ -50,9 +54,11 @@ def is_guess_in_secret_word(guess, secret_city):
     else:
         return False
 
+
 def print_secret_word(secret_city, guessed_letters):
     """
-    Step 4: Show guessed letters and leave underscore for letters not guessed and misssing
+    Step 4: Show guessed letters and leave underscore for letters\
+    not guessed and misssing
     """
     for letter in secret_city:
         if letter in guessed_letters:
@@ -61,18 +67,21 @@ def print_secret_word(secret_city, guessed_letters):
             print(" _ ", end="")
     print("\n")
 
+
 def screen_clearance():
     typewriter("Press 'c' and then Enter to clear the screen")
     clear = input().lower()
     if clear == 'c':
         os.system("cls" if os.name == "nt" else "clear")
-        secret_word = ""      
+        secret_word = ""
     else:
         print("Screen will not be cleared.")
 
+
 def ask_yes_no_question(prompt):
     """
-    Step 6: Ask the user a yes/no question and return True for 'yes' and False for 'no' to (not) play game again.
+    Step 6: Ask the user a yes/no question and return True\
+    for 'yes' and False for 'no' to (not) play game again.
     """
     while True:
         response = input(prompt).strip().lower()
@@ -82,6 +91,7 @@ def ask_yes_no_question(prompt):
             return False
         else:
             print("Please enter either 'yes' or 'no'.")
+
 
 def start_game(secret_city, username):
     """
@@ -95,27 +105,31 @@ def start_game(secret_city, username):
         guessed_letters = ""
         unique_secret_letters = set(secret_city)
 
-        while remaining_attempts > 0 and len(guessed_letters) < len(unique_secret_letters):
+        while (remaining_attempts > 0 and
+               len(guessed_letters) < len(unique_secret_letters)):
             guess = input("Guess a letter of the secret city: ").upper()
             guess_in_secret_word = is_guess_in_secret_word(guess, secret_city)
 
             if guess_in_secret_word:
 
                 if guess in guessed_letters:
-                    print("You have already guessed the letter {}".format(guess))
-            
+                    print("You have already guessed the letter {}"
+                          .format(guess))
                 else:
-                    print("Yes! The letter {} is part of the secret city".format(guess))
+                    print("Yes! The letter {} is part of the secret city"
+                          .format(guess))
                     guessed_letters += guess
-   
+
             else:
-                print("No! The letter {} is not part of the secret city".format(guess))
+                print("No! The letter {} is not part of the secret city"
+                      .format(guess))
                 remaining_attempts -= 1
 
             print("\n{} attempts remaining\n".format(remaining_attempts))
             print(hangman_stages.get_hangman_stage(remaining_attempts))
             print_secret_word(secret_city, guessed_letters)
-            print("\n\nNumber of correct letters guessed: {}\n".format(len(guessed_letters)))
+            print("\n\nNumber of correct letters guessed: {}\n".format(
+                len(guessed_letters)))
 
             if len(set(guessed_letters)) == len(set(secret_city)):
                 print("Seems you are a master in geography!\n")
@@ -126,14 +140,19 @@ def start_game(secret_city, username):
             if not guessed_correctly:
                 print("--- Sorry, you have lost this game! ---\n")
 
-        play_again = ask_yes_no_question("Do you want to play again? (yes/no): ")
+        play_again = ask_yes_no_question(
+            "Do you want to play again? (yes/no): ")
 
         if play_again:
             print("Starting a new game...")
             screen_clearance()
         else:
-            typewriter(f"Thanks for putting your knowledge to the test {username}")
-            sys.exit("Just in case you made up your mind click 'Run Program' to play again")
+            typewriter(
+                f"Thanks for putting your knowledge to the test {username}")
+            sys.exit(
+                "Just in case you made up your mind click\
+                'Run Program' to play again")
+
 
 def main():
     opening_image()
@@ -150,7 +169,9 @@ def main():
 
         if username == "":
             typewriter("Looks like you want to play anonymously")
-            typewriter("Ok, we will call you Geo, the champ of capital cities knowledge, aka G3C")
+            typewriter("Ok, we will call you Geo, the champ "
+                       "of capital cities knowledge, aka G3C")
+
             username = "G3C"
             break
         elif not username.isalpha():
@@ -167,6 +188,7 @@ def main():
     while True:
         secret_city = select_word()
         start_game(secret_city, username)
+
 
 if __name__ == "__main__":
     main()

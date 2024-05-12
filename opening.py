@@ -1,5 +1,6 @@
 from colorama import Fore
 
+
 def opening_image():
     print(Fore.GREEN + r"""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -17,8 +18,8 @@ def opening_image():
 ⠀⠀⡰⣛⡤⢜⣮⠕⠊⠉⠉⠉⠺⢝⡇⢤⣎⢦⠀⠀⠀
 ⠀⡴⠻⣀⡨⡞⠁⠀⠀⠀⠀⠀⠀⠀⠹⡇⣀⠝⢣⠀⠀
 ⣼⣔⣊⣑⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⣊⣁⣢⣵⡀""")
-    
-    
+
+
 def instructions():
     print("="*78)
     print("*" * 28 + " HOW TO PLAY THE GAME " + "*" * 28)
