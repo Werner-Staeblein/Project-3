@@ -150,8 +150,7 @@ def start_game(secret_city, username):
             typewriter(
                 f"Thanks for putting your knowledge to the test {username}")
             sys.exit(
-                "Just in case you made up your mind click\
-                'Run Program' to play again")
+                "If you still want to play click 'Run Program'")
 
 
 def main():
